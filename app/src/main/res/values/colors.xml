@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="slid_menu_bg_color">#c7c7c7</color>
+    <color name="separate_line_color">#0C0C0C</color>
+    <color name="text_black_color">#0C0C0C</color>
+
+</resources>
