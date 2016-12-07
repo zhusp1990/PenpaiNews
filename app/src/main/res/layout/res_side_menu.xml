@@ -1,213 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <View
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/slid_menu_bg_color" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:id="@+id/ll_cur_event"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:button="@null"
-                    android:ems="1"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="时事"
-                    android:textColor="@color/text_red_black_select"
-                    android:textSize="@dimen/text_size_24sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cur_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="时事"
+                        android:textSize="@dimen/text_size_24sp" />
+
+                    <View
+                        android:layout_width="22dp"
+                        android:layout_height="1dp"
+                        android:background="@color/separate_line_color" />
+                </LinearLayout>
 
                 <View
-                    android:layout_width="22dp"
-                    android:layout_height="1dp"
-                    android:background="@color/separate_line_color" />
+                    android:id="@+id/indicator_cur_event"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
 
-            <View
-                android:layout_width="6dp"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:orientation="horizontal">
-
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/ll_caijing"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:button="@null"
-                    android:ems="1"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="时事"
-                    android:textColor="@color/text_red_black_select"
-                    android:textSize="@dimen/text_size_24sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_caijing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="财经"
+                        android:textSize="@dimen/text_size_24sp" />
+
+                    <View
+                        android:layout_width="22dp"
+                        android:layout_height="1dp"
+                        android:background="@color/separate_line_color" />
+                </LinearLayout>
 
                 <View
-                    android:layout_width="22dp"
-                    android:layout_height="1dp"
-                    android:background="@color/separate_line_color" />
+                    android:id="@+id/indicator_caijing"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
 
-            <View
-                android:layout_width="6dp"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:orientation="horizontal">
-
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:id="@+id/ll_thought"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:button="@null"
-                    android:ems="1"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="时事"
-                    android:textColor="@color/text_red_black_select"
-                    android:textSize="@dimen/text_size_24sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_thought"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="思想"
+                        android:textSize="@dimen/text_size_24sp" />
+
+                    <View
+                        android:layout_width="22dp"
+                        android:layout_height="1dp"
+                        android:background="@color/separate_line_color" />
+                </LinearLayout>
 
                 <View
-                    android:layout_width="22dp"
-                    android:layout_height="1dp"
-                    android:background="@color/separate_line_color" />
+                    android:id="@+id/indicator_thought"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
 
-            <View
-                android:layout_width="6dp"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:orientation="horizontal">
-
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:id="@+id/ll_life"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:button="@null"
-                    android:ems="1"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="时事"
-                    android:textColor="@color/text_red_black_select"
-                    android:textSize="@dimen/text_size_24sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="生活"
+                        android:textSize="@dimen/text_size_24sp" />
+
+                    <View
+                        android:layout_width="22dp"
+                        android:layout_height="1dp"
+                        android:background="@color/separate_line_color" />
+                </LinearLayout>
 
                 <View
-                    android:layout_width="22dp"
-                    android:layout_height="1dp"
-                    android:background="@color/separate_line_color" />
+                    android:id="@+id/indicator_life"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
 
-            <View
-                android:layout_width="6dp"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:orientation="horizontal">
-
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:id="@+id/ll_question"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:button="@null"
-                    android:ems="1"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="时事"
-                    android:textColor="@color/text_red_black_select"
-                    android:textSize="@dimen/text_size_24sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="问吧"
+                        android:textSize="@dimen/text_size_24sp" />
+
+                    <View
+                        android:layout_width="22dp"
+                        android:layout_height="1dp"
+                        android:background="@color/separate_line_color" />
+                </LinearLayout>
 
                 <View
-                    android:layout_width="22dp"
-                    android:layout_height="1dp"
-                    android:background="@color/separate_line_color" />
+                    android:id="@+id/indicator_question"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
-
-            <View
-                android:layout_width="6dp"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:id="@+id/ll_booked"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:button="@null"
-                    android:ems="1"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="时事"
-                    android:textColor="@color/text_red_black_select"
-                    android:textSize="@dimen/text_size_24sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_booked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="订阅"
+                        android:textSize="@dimen/text_size_24sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/indicator_booked"
+                    android:layout_width="6dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
-
-            <View
-                android:layout_width="6dp"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent" />
         </LinearLayout>
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>

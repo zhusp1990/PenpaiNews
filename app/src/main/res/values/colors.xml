@@ -6,5 +6,6 @@
     <color name="slid_menu_bg_color">#c7c7c7</color>
     <color name="separate_line_color">#0C0C0C</color>
     <color name="text_black_color">#0C0C0C</color>
+    <color name="white">#ffffff</color>
 
 </resources>
